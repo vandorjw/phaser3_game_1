@@ -13,6 +13,18 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.setCollideWorldBounds(true);
     }
 
+    static preload(scene: Phaser.Scene) {
+        scene.load.atlas(
+            'characters',
+            'assets/images/characters.png',
+            'assets/images/characters_atlas.json',
+        );
+        scene.load.animation(
+            'characters_anim',
+            'assets/images/characters_anim.json',
+        );
+    }
+
     update(): void {
         this.anims.play('townsfolk_walk', true);
         const speed = 100;
@@ -33,6 +45,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         // Normalize the player's velocity vector if moving diagonally
         if (playerVelocity.x !== 0 && playerVelocity.y !== 0) {
             playerVelocity.normalize();
+        } else if (playerVelocity.x === 0 && playerVelocity.y === 0) {
+            this.anims.play('townsfolk_idle', true);
         }
 
         playerVelocity.scale(speed);

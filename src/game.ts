@@ -21,12 +21,7 @@ class PreloadScene extends Phaser.Scene {
         this.load.tilemapTiledJSON('map', 'assets/images/map.json');
 
         // load character sprites
-        this.load.atlas(
-            'characters',
-            'assets/images/characters.png',
-            'assets/images/characters_atlas.json',
-        );
-        this.load.animation('characters_anim', 'assets/images/characters_anim.json',)
+        Player.preload(this);
     }
 
     create() {
