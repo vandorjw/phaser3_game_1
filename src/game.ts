@@ -1,4 +1,5 @@
 import * as Phaser from 'phaser';
+import Player from './player';
 
 class PreloadScene extends Phaser.Scene {
     constructor() {
@@ -50,39 +51,12 @@ class MainScene extends Phaser.Scene {
         const tileset = map.addTilesetImage('tileset', 'tiles', 32,32,0,0);
         const layer1 = map.createLayer('Tile Layer 1', tileset,0,0);
 
-        this.player = new Phaser.Physics.Arcade.Sprite(this, 0, 0, 'characters', 'townsfolk_f_idle_1');
-        this.physics.add.existing(this.player);
-        this.add.existing(this.player);
+        this.player = new Player(this, 0, 0, 'characters', 'townsfolk_f_idle_1');
 
-        this.inputkeys = this.input.keyboard.addKeys({
-            up: Phaser.Input.Keyboard.KeyCodes.W,
-            down: Phaser.Input.Keyboard.KeyCodes.S,
-            left: Phaser.Input.Keyboard.KeyCodes.A,
-            right: Phaser.Input.Keyboard.KeyCodes.D
-        });
-
-        // Enable world bounds collision for the player sprite
-        this.player.setCollideWorldBounds(true);
     }
 
     update() {
-        this.player.anims.play('townsfolk_walk', true);
-        const speed = 100;
-        let playerVelocity = new Phaser.Math.Vector2();
-        if(this.inputkeys.left.isDown ){
-            playerVelocity.x = -1;
-        } else if ( this.inputkeys.right.isDown ) {
-            playerVelocity.x = 1;
-        }
-
-        if(this.inputkeys.up.isDown ){
-            playerVelocity.y = -1;
-        } else if ( this.inputkeys.down.isDown ) {
-            playerVelocity.y = 1;
-        }
-        playerVelocity.scale(speed);
-        this.player.setVelocity(playerVelocity.x, playerVelocity.y);
-
+        this.player.update();
     }
 }
 
