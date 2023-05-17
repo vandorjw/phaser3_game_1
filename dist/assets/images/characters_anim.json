@@ -1,0 +1,916 @@
+{
+    "anims": [
+        {
+            "key": "townsfolk_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "townsfolk_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "townsfolk_f_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "thief_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "thief_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "thief_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "thief_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "thief_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "skinnynun_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "skinnynun_idle_+_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "skinnynun_idle_+_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "skinnynun_idle_+_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "skinnynun_idle_+_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "queen_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "queen_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "queen_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "queen_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "queen_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "princess_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "princess_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "princess_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "princess_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "princess_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "normalnun_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "normalnun_idle_+_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "normalnun_idle_+_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "normalnun_idle_+_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "normalnun_idle_+_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "mountainking_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "mountainking_idle_+_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mountainking_idle_+_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mountainking_idle_+_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mountainking_idle_+_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "merchant_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "merchant_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "merchant_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "merchant_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "merchant_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "magicshopkeeper_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "magicshopkeeper_idle_+_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "magicshopkeeper_idle_+_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "magicshopkeeper_idle_+_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "magicshopkeeper_idle_+_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "mage_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "mage_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mage_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mage_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mage_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "mage_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "mage_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mage_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mage_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "mage_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "largeknight_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "largeknight_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeknight_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeknight_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeknight_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "largeknight_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "largeknight_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeknight_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeknight_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeknight_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "largeeliteknight_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "largeeliteknight_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "largeeliteknight_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "knight_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "knight_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "knight_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "knight_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "knight_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "knight_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "knight_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "knight_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "knight_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "knight_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "king_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "king_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "king_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "king_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "king_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "king_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "king_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "king_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "king_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "king_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "herald_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "herald_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "herald_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "herald_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "herald_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "herald_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "herald_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "herald_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "herald_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "herald_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "heavyknight_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "heavyknight_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "heavyknight_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "fatnun_idle_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "fatnun_idle_+_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "fatnun_idle_+_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "fatnun_idle_+_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "fatnun_idle_+_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "executioner_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "executioner_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "executioner_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "executioner_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "executioner_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "executioner_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "executioner_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "executioner_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "executioner_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "executioner_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "eliteknight_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "eliteknight_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "eliteknight_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "butcher_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "butcher_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "butcher_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "butcher_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "butcher_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "butcher_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "butcher_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "butcher_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "butcher_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "butcher_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "blacksmith_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "blacksmith_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "blacksmith_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "bishop_idle_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "bishop_idle_+_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "bishop_idle_+_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "bishop_idle_+_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "bishop_idle_+_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "archer_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "archer_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "archer_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "archer_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "archer_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "archer_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "archer_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "archer_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "archer_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "archer_idle_4"
+                }
+            ]
+        },
+        {
+            "key": "alchemist_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "alchemist_walk_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "alchemist_walk_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "alchemist_walk_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "alchemist_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "alchemist_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "characters",
+                    "frame": "alchemist_idle_1"
+                },
+                {
+                    "key": "characters",
+                    "frame": "alchemist_idle_2"
+                },
+                {
+                    "key": "characters",
+                    "frame": "alchemist_idle_3"
+                },
+                {
+                    "key": "characters",
+                    "frame": "alchemist_idle_4"
+                }
+            ]
+        }
+    ]
+}
