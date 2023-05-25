@@ -45,9 +45,10 @@ class MainScene extends Phaser.Scene {
         const map = this.make.tilemap({key: 'map'});
         const tileset = map.addTilesetImage('tileset', 'tiles', 32,32,0,0);
         const layer1 = map.createLayer('Tile Layer 1', tileset,0,0);
+        layer1.setCollisionByProperty({ collides: true });
 
-        this.player = new Player(this, 0, 0, 'characters', 'townsfolk_f_idle_1');
-
+        this.player = new Player(this, 160, 160, 'characters', 'townsfolk_f_idle_1');
+        this.physics.add.collider(this.player, layer1);
     }
 
     update() {
@@ -59,8 +60,8 @@ class MainScene extends Phaser.Scene {
 const config = {
     type: Phaser.AUTO,
     backgroundColor: '#333333',
-    width: 640,
-    height: 640,
+    width: 320,
+    height: 320,
     scale: {
         mode: Phaser.Scale.FIT,
         // we place it in the middle of the page.

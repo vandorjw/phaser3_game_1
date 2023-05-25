@@ -9,8 +9,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.scene.physics.world.enable(this);
         this.scene.add.existing(this);
 
+        // Set the size and position of the collision box
+        this.setSize(16, 16);
+        this.setOffset(8, 16);
+
         this.inputKeys = this.scene.input.keyboard.createCursorKeys();
         this.setCollideWorldBounds(true);
+        this.setBounce(0.2);
     }
 
     static preload(scene: Phaser.Scene) {
@@ -32,8 +37,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
         if (this.inputKeys.left.isDown) {
             playerVelocity.x = -1;
+            this.setFlipX(true);
         } else if (this.inputKeys.right.isDown) {
             playerVelocity.x = 1;
+            this.setFlipX(false);
         }
 
         if (this.inputKeys.up.isDown) {

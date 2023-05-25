@@ -1,25 +1,25 @@
 { "compressionlevel":-1,
- "height":20,
+ "height":10,
  "infinite":false,
  "layers":[
         {
          "compression":"",
-         "data":"RwAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAEkAAABbAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXQAAAFsAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABdAAAAWwAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAF0AAABvAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAASwAAAFwAAABcAAAAXAAAAFwAAABKAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcQAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAABbAAAAXAAAAFwAAABcAAAAXAAAAF0AAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAFsAAABcAAAAXAAAAFwAAABcAAAAXQAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAWwAAAFwAAABcAAAAXAAAAFwAAABdAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAABbAAAAXAAAAFwAAABcAAAAXAAAAF0AAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAFsAAABcAAAAXAAAAFwAAABcAAAAXQAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAWwAAAFwAAABcAAAAXAAAAFwAAABdAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAABbAAAAXAAAAFwAAABcAAAAXAAAAF0AAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAFsAAABcAAAAXAAAAFwAAABcAAAAXQAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAWwAAAFwAAABcAAAAXAAAAFwAAABdAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAABbAAAAXAAAAFwAAABcAAAAXAAAAF0AAACYAAAAmAAAAJgAAACYAAAAmAAAAJgAAACYAAAARwAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAF8AAABcAAAAXAAAAFwAAABcAAAAXgAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAEkAAABbAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXQAAAFsAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABdAAAAWwAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAF0AAABvAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcQAAAA==",
+         "data":"RwAAAEgAAABIAAAASAAAAEgAAABIAAAASAAAAEgAAABIAAAASQAAAFsAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAF0AAABbAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABdAAAAWwAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXQAAAFsAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAF0AAABbAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABdAAAAWwAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXQAAAFsAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAF0AAABbAAAAXAAAAFwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAABdAAAAbwAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcQAAAA==",
          "encoding":"base64",
-         "height":20,
+         "height":10,
          "id":1,
          "name":"Tile Layer 1",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":20,
+         "width":10,
          "x":0,
          "y":0
         }],
  "nextlayerid":2,
  "nextobjectid":1,
  "orientation":"orthogonal",
- "renderorder":"left-down",
+ "renderorder":"right-down",
  "tiledversion":"1.10.1",
  "tileheight":32,
  "tilesets":[
@@ -34,10 +34,83 @@
          "spacing":0,
          "tilecount":180,
          "tileheight":32,
+         "tiles":[
+                {
+                 "id":70,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":71,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":72,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":90,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":92,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":110,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":111,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":112,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }],
          "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
  "version":"1.10",
- "width":20
+ "width":10
 }
