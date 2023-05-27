@@ -49,6 +49,12 @@ class MainScene extends Phaser.Scene {
 
         this.player = new Player(this, 160, 160, 'characters', 'townsfolk_f_idle_1');
         this.physics.add.collider(this.player, layer1);
+
+        const camera = this.cameras.main;
+        camera.startFollow(this.player);
+        camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+        // set zoom level
+        camera.setZoom(2);
     }
 
     update() {
@@ -60,8 +66,8 @@ class MainScene extends Phaser.Scene {
 const config = {
     type: Phaser.AUTO,
     backgroundColor: '#333333',
-    width: 320,
-    height: 320,
+    width: 960,
+    height: 1600,
     scale: {
         mode: Phaser.Scale.FIT,
         // we place it in the middle of the page.
