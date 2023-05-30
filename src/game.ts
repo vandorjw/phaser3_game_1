@@ -1,5 +1,6 @@
 import * as Phaser from 'phaser';
 import Player from './player';
+import HeavyKnight from "./units/heavyknight";
 
 class PreloadScene extends Phaser.Scene {
     constructor() {
@@ -32,11 +33,15 @@ class PreloadScene extends Phaser.Scene {
 
 // Define your main game scene
 class MainScene extends Phaser.Scene {
-    inputkeys;
-    player;
+    player: Player;
+
+    private heavy_knights: Phaser.Physics.Arcade.Sprite[];
+    private layer1: Phaser.Tilemaps.TilemapLayer;
+    private spawnTimer: Phaser.Time.TimerEvent;
 
     constructor() {
         super('MainScene');
+        this.heavy_knights = [];
     }
 
     create() {
@@ -45,6 +50,7 @@ class MainScene extends Phaser.Scene {
         const map = this.make.tilemap({key: 'map'});
         const tileset = map.addTilesetImage('tileset', 'tiles', 32,32,0,0);
         const layer1 = map.createLayer('Tile Layer 1', tileset,0,0);
+        this.layer1 = layer1;
         layer1.setCollisionByProperty({ collides: true });
 
         this.player = new Player(this, 160, 160, 'characters', 'townsfolk_f_idle_1');
@@ -55,10 +61,41 @@ class MainScene extends Phaser.Scene {
         camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
         // set zoom level
         camera.setZoom(2);
+
+
+        // spawn timer for the heavy knights
+        this.spawnTimer = this.time.addEvent({
+          delay: 1000, // 1000 milliseconds = 1 second
+          callback: this.spawnHeavyKnight,
+          callbackScope: this,
+          loop: true
+        });
     }
+
+    noop = () => {
+        // No operation
+    };
 
     update() {
         this.player.update();
+
+        // Update heavy knights
+        for (const heavyKnight of this.heavy_knights) {
+            heavyKnight.update();
+        }
+    }
+
+    spawnHeavyKnight() {
+        const heavyKnight = new HeavyKnight(this, this.player.x, this.player.y);
+
+        // add collider between player and heavy knight
+        this.physics.add.collider(this.player, heavyKnight);
+
+        // add collider between heavy knight and map
+        this.physics.add.collider(heavyKnight, this.layer1);
+
+        this.add.existing(heavyKnight);
+        this.heavy_knights.push(heavyKnight);
     }
 }
 
