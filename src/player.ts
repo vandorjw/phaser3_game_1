@@ -14,20 +14,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.setOffset(8, 16);
 
         this.inputKeys = this.scene.input.keyboard.createCursorKeys();
-        this.setCollideWorldBounds(true);
+        // this.setCollideWorldBounds(true);
         this.setBounce(0.2);
-    }
-
-    static preload(scene: Phaser.Scene) {
-        scene.load.atlas(
-            'characters',
-            'assets/images/characters.png',
-            'assets/images/characters_atlas.json',
-        );
-        scene.load.animation(
-            'characters_anim',
-            'assets/images/characters_anim.json',
-        );
     }
 
     update(): void {
