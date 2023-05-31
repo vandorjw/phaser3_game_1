@@ -7,11 +7,16 @@ import PreloadScene from "./scenes/preload";
 const config = {
     type: Phaser.AUTO,
     backgroundColor: '#333333',
-    width: 800,
-    height: 600,
+    // our game should be the size of the browser
+    width: window.innerWidth,
+    height: window.innerHeight,
     scale: {
         // we place it in the middle of the page.
-        autoCenter: Phaser.Scale.CENTER_BOTH
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        // Our game will be responsive
+        mode: Phaser.Scale.FIT,
+        parent: 'game',
+
     },
     scene: [PreloadScene, MainScene],
     physics: {

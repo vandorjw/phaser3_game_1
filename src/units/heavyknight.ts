@@ -59,6 +59,5 @@ export default class HeavyKnight extends Phaser.Physics.Arcade.Sprite {
         }
 
         this.setVelocity(velocity.x, velocity.y);
-
     }
 }
