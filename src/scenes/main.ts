@@ -16,15 +16,16 @@ export default class MainScene extends Phaser.Scene {
 
     create() {
 
+        // by default, there is only 1 pointer input.
+        // we need to enable multi-touch input, so we add a pointer
+        this.input.addPointer(1);
+
+
         // You can access the loaded assets using this.textures or this.cache
         this.map = this.make.tilemap({key: 'map'});
         const tileset = this.map.addTilesetImage('tileset', 'tiles', 32,32,0,0);
-        const layer1 = this.map.createLayer('Tile Layer 1', tileset,0,0);
-        this.layer1 = layer1;
-        layer1.setCollisionByProperty({ collides: true });
-
-        this.player = new Player(this, 160, 160, 'characters', 'townsfolk_f_idle_1');
-        this.physics.add.collider(this.player, layer1);
+        this.layer1 = this.map.createLayer('Tile Layer 1', tileset,0,0);
+        this.layer1.setCollisionByProperty({ collides: true });
 
         const camera = this.cameras.main;
 
@@ -32,34 +33,26 @@ export default class MainScene extends Phaser.Scene {
         const cameraHeight = this.game.config.height as number;
         camera.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
         camera.setViewport(0, 0, cameraWidth, cameraHeight);
+
         // set zoom level
         camera.setZoom(2);
 
-        this.input.on('pointermove', (pointer: Phaser.Input.Pointer) => {
-            // scroll camera up when mouse is at the top of the screen
-            if (pointer.y < camera.height/4) {
-                camera.scrollY -= 4;
-            } else if (pointer.y > (camera.height*3/4)) {
-                camera.scrollY += 4;
+        this.player = new Player(this, 160, 160, 'characters', 'townsfolk_f_idle_1');
+        this.player.create();
+        this.physics.add.collider(this.player, this.layer1);
+
+        // set camera to follow player
+        camera.startFollow(this.player);
+
+
+        // spawn heavy knights when touching the player
+        this.input.on('pointerdown', () => {
+            // if the distance between the player and the pointer is less than 150
+            if (Phaser.Math.Distance.Between(this.player.x, this.player.y, this.input.activePointer.x, this.input.activePointer.y) < 20) {
+                this.spawnHeavyKnight();
             }
-            // scroll camera left when mouse is at the left of the screen and right when right of the screen
-            if (pointer.x < camera.width/4) {
-                camera.scrollX -= 4;
-            } else if (pointer.x > camera.width*3/4){
-                camera.scrollX += 4;
-            }
         });
 
-        // when pressing the spacebar, center the camera on the player sprite
-        this.input.keyboard.on('keydown-SPACE', () => {
-            camera.centerOn(this.player.x, this.player.y);
-        });
-
-
-        // spawn heavy knights when pressing the 'k' key
-        this.input.keyboard.on('keydown-K', () => {
-            this.spawnHeavyKnight();
-        });
     }
 
     update() {
@@ -70,6 +63,7 @@ export default class MainScene extends Phaser.Scene {
             heavyKnight.update();
         }
     }
+        
 
     spawnHeavyKnight() {
         const heavyKnight = new HeavyKnight(this, this.player.x, this.player.y);

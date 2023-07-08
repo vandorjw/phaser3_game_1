@@ -2,7 +2,6 @@ import * as Phaser from 'phaser';
 import MainScene from "./scenes/main";
 import PreloadScene from "./scenes/preload";
 
-
 // Create the Phaser game configuration
 const config = {
     type: Phaser.AUTO,
@@ -22,10 +21,13 @@ const config = {
     physics: {
         default: 'arcade',
         arcade: {
-          debug: true
+            gravity: {y:0},
+            debug: true
         }
-      },
+    },
 };
 
 // Instantiate the Phaser game
 const game = new Phaser.Game(config);
+
+

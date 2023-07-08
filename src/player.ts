@@ -13,39 +13,33 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.setSize(16, 16);
         this.setOffset(8, 16);
 
-        this.inputKeys = this.scene.input.keyboard.createCursorKeys();
+        
         // this.setCollideWorldBounds(true);
         this.setBounce(0.2);
     }
 
+    create(): void {
+
+        // event listener for pointer down
+        this.scene.input.on(Phaser.Input.Events.POINTER_UP, (pointer: Phaser.Input.Pointer) => {
+            console.log('Player detected pointerup event');
+            const { worldX, worldY } = pointer
+            this.scene.physics.moveToObject(this, pointer, 100);
+        }, this);
+
+    }
+
     update(): void {
+
+        // if(this.scene.input.pointer1.isDown) {
+        //     this.scene.physics.moveToObject(this, this.scene.input.pointer1, 100);
+        // }
+
+        // player animation when walking
         this.anims.play('townsfolk_walk', true);
         const speed = 100;
-        const playerVelocity = new Phaser.Math.Vector2();
 
-        if (this.inputKeys.left.isDown) {
-            playerVelocity.x = -1;
-            this.setFlipX(true);
-        } else if (this.inputKeys.right.isDown) {
-            playerVelocity.x = 1;
-            this.setFlipX(false);
-        }
 
-        if (this.inputKeys.up.isDown) {
-            playerVelocity.y = -1;
-        } else if (this.inputKeys.down.isDown) {
-            playerVelocity.y = 1;
-        }
-
-        // Normalize the player's velocity vector if moving diagonally
-        if (playerVelocity.x !== 0 && playerVelocity.y !== 0) {
-            playerVelocity.normalize();
-        } else if (playerVelocity.x === 0 && playerVelocity.y === 0) {
-            this.anims.play('townsfolk_idle', true);
-        }
-
-        playerVelocity.scale(speed);
-        this.setVelocity(playerVelocity.x, playerVelocity.y);
 
     }
 }
